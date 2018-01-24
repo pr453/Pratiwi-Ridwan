@@ -11,3 +11,4 @@ Reading material, homework assignments, and code will be posted here.
 [Advanced R Book](http://adv-r.had.co.nz/) (Excellent book if you want to understand how R works)  
 [Installing git](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git) (program for getting things from github)  
 [Github Tutorial](https://www.youtube.com/watch?v=0fKg7e37bQE)  
+[Link to faster BLAS libraries (mac only)](https://gist.github.com/nicebread/6920c8287d7bffb03007)  
