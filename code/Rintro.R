@@ -45,7 +45,7 @@ iaafdata[2,]           # second row
 iaafdata[ ,2 ]         # second column
 iaafdata["result_all"]
 iaafdata[1,2]          # first row, second column
-iaafdata$gallons[1]    # first entry of gallons variable
+iaafdata$event[1]    # first entry of gallons variable
 
 
 # get a subset of the rows based on one of the variables
@@ -54,8 +54,6 @@ iaafdata[iaafdata$units == "seconds" , ]
 
 # a different way to get a subset of the data
 subset(iaafdata, units == "meters")
-# use ? to get documentation for functions
-?subset
 
 
 # for homework 1, we need to compute probabilities
@@ -69,15 +67,17 @@ subset(iaafdata, units == "meters")
 
 ?Distributions
 
-rnorm(7)
 ?rnorm  # documentation
+rnorm()
+rnorm(7)
 # some arguments have no defaults - these are required
 # arguments with defaults are not required but can be changed
 
 # these are all the same!
-rnorm(7,mean = 3, sd = 2)
+rnorm(n = 7,mean = 3, sd = 2)
 rnorm(7,3,2)
 rnorm(7, sd = 2, mean = 3)
+rnorm(7, 2, mean = 3)
 rnorm(n = 7, 3, 2)
 rnorm(sd = 2, n = 7, 3) 
 
@@ -87,6 +87,7 @@ pnorm(-1.645)
 ?dbinom
 x <- 0:10
 p <- dbinom(x,10,1/2)
+cbind(x,p)
 plot(x,p)
 p <- dbinom(x,10,0.1)
 plot(x,p)
